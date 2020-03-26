@@ -1,0 +1,13 @@
+<nb-card>
+  <nb-card-header>
+    <h1>Estadisticas COVID-19 Colombia</h1>
+  </nb-card-header>
+  <nb-card-body>
+    <p><strong>Confirmados: </strong> {{ getLatestConfirmedCases() }}</p>
+    <p><strong>Recuperados: </strong> {{ getLatestRecoveryCases() }}</p>
+    <p><strong>Muertes: </strong> {{ getLatestDeathCases() }}</p>
+  </nb-card-body>
+  <nb-card-footer>
+    Ultima Actualizacion: {{ getLatestUpdated() | date }}
+  </nb-card-footer>
+</nb-card>
