@@ -2,7 +2,8 @@
   "name": "covid19-dashboard",
   "version": "0.0.0",
   "engines": {
-    "node": "v12.13.1"
+    "node": "v12.13.1",
+    "npm": "6.12.1"
   },
   "scripts": {
     "ng": "ng",
