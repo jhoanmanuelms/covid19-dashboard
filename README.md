@@ -7,7 +7,11 @@ La informacion proviene del api [Covid-19](https://covid19api.com/) que a su vez
 [repositorio de datos](https://github.com/CSSEGISandData/COVID-19) proveniente de Johns Hopkins University Center for
 Systems Science and Engineering (JHU CSSE)
  
-Este proyecto es totalmente open-source asi q por favor, sientanse libres de mandar sus PR's o reutilzarlo para sus
+Este proyecto es totalmente open-source asi que por favor, sientanse libres de mandar sus PR's o reutilzarlo para sus
 distintos paises.
 
 Gracias y a superar este virus! :muscle:
+
+## Mejoras sugeridas
+- Hacer que sea responsive para celulares
+- Mejoras en estilos visuales

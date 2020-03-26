@@ -9,6 +9,7 @@ export class SummaryComponent implements OnInit {
   @Input() deaths: number;
   @Input() confirmed: number;
   @Input() recoveries: number;
+  @Input() dailyCases: number;
 
   constructor() { }
 

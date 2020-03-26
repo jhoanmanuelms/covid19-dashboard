@@ -4,6 +4,7 @@
   </nb-card-header>
   <nb-card-body>
     <app-summary
+      [dailyCases]="getDailyCases()"
       [deaths]="getLatestDeathCases()"
       [confirmed]="getLatestConfirmedCases()"
       [recoveries]="getLatestRecoveryCases()">

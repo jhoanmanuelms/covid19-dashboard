@@ -35,4 +35,8 @@ export class DashboardPrincipalComponent implements OnInit {
   getLatestUpdated(): Date {
     return this.recoveryCases[this.recoveryCases.length - 1].Date;
   }
+
+  getDailyCases(): number {
+    return this.getLatestConfirmedCases() - this.confirmedCases[this.confirmedCases.length - 2].Cases;
+  }
 }
