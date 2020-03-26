@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
+import { ResumenComponent } from './resumen/resumen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardPrincipalComponent
+    DashboardPrincipalComponent,
+    ResumenComponent
   ],
     imports: [
       BrowserModule,

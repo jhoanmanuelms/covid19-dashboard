@@ -3,9 +3,11 @@
     <h1>Estadisticas COVID-19 Colombia</h1>
   </nb-card-header>
   <nb-card-body>
-    <p><strong>Confirmados: </strong> {{ getLatestConfirmedCases() }}</p>
-    <p><strong>Recuperados: </strong> {{ getLatestRecoveryCases() }}</p>
-    <p><strong>Muertes: </strong> {{ getLatestDeathCases() }}</p>
+    <app-resumen
+      [deaths]="getLatestDeathCases()"
+      [confirmed]="getLatestConfirmedCases()"
+      [recoveries]="getLatestRecoveryCases()">
+    </app-resumen>
   </nb-card-body>
   <nb-card-footer>
     Ultima Actualizacion: {{ getLatestUpdated() | date }}
