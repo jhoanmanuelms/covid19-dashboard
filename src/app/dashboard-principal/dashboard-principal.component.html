@@ -3,13 +3,15 @@
     <h1>Estadisticas COVID-19 Colombia</h1>
   </nb-card-header>
   <nb-card-body>
-    <app-resumen
+    <app-summary
       [deaths]="getLatestDeathCases()"
       [confirmed]="getLatestConfirmedCases()"
       [recoveries]="getLatestRecoveryCases()">
-    </app-resumen>
+    </app-summary>
+    <app-progression [data]="confirmedCases"></app-progression>
   </nb-card-body>
   <nb-card-footer>
-    Ultima Actualizacion: {{ getLatestUpdated() | date }}
+    <p>Ultima Actualizacion: {{ getLatestUpdated() | date }}</p>
+    <p>Fuente: <a href="https://systems.jhu.edu/research/public-health/ncov/">JHU CSSE</a></p>
   </nb-card-footer>
 </nb-card>

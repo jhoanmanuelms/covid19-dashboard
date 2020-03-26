@@ -8,16 +8,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
-import { ResumenComponent } from './resumen/resumen.component';
+import { SummaryComponent } from './summary/summary.component';
+import { ProgressionComponent } from './progression/progression.component';
+import { ChartModule } from 'angular2-chartjs';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardPrincipalComponent,
-    ResumenComponent
+    SummaryComponent,
+    ProgressionComponent
   ],
     imports: [
       BrowserModule,
+      ChartModule,
       NbCardModule,
       HttpClientModule,
       BrowserAnimationsModule,
@@ -26,7 +31,7 @@ import { ResumenComponent } from './resumen/resumen.component';
       NbEvaIconsModule,
       AppRoutingModule
     ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
