@@ -8,9 +8,9 @@ import {CovidApiService} from '../service/covid-api.service';
   styleUrls: ['./dashboard-principal.component.css']
 })
 export class DashboardPrincipalComponent implements OnInit {
-  private deathCases: CovidStats[];
-  private recoveryCases: CovidStats[];
-  private confirmedCases: CovidStats[];
+  deathCases: CovidStats[];
+  recoveryCases: CovidStats[];
+  confirmedCases: CovidStats[];
 
   constructor(private covidApiService: CovidApiService) { }
 
